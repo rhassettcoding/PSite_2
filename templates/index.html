@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="RHassett Plumbing — San Francisco's trusted plumber for inspections, repairs, and emergency service." />
+  <title>RHassett Plumbing</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <a href="#back-home" class="visually-hidden">Skip to main content</a>
+
+  <!-- Header -->
+  <header id="top" class="container" role="banner">
+    <div class="logo">
+      <img id="logo1"
+           src="{{ url_for('static', filename='images/rhasset_plumbing_logo.png') }}"
+           alt="RHassett Plumbing logo">
+    </div>
+
+    <div id="back-home" class="header-center-content">
+      <h1 class="header">RHassett Plumbing</h1>
+      <div class="motto">
+        <em>San Francisco's #1 Trusted Plumber</em>
+      </div>
+      <div id="openSign" aria-live="polite">
+        {{ open }}
+      </div>
+    </div>
+
+    <div class="header-right-content">
+      San Francisco, CA<br>
+      📞 <a href="tel:4152051095" aria-label="Call (415) 205-1095">(415) 205-1095</a>
+      <br><br>
+      <a href="tel:4152051095" class="btn" aria-label="Call us now">Call Us Now</a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navigation-bar container" role="navigation" aria-label="Primary">
+    <div class="navigation-buttons">
+      <div class="underline-on-hover">
+        <a href="#services">Services</a>
+      </div>
+    </div>
+    <div class="navigation-buttons">
+      <div class="underline-on-hover">
+        <a href="#testimonials">Testimonials</a>
+      </div>
+    </div>
+    <div class="navigation-buttons">
+      <div class="underline-on-hover">
+        <a href="#about">About</a>
+      </div>
+    </div>
+    <div class="navigation-buttons">
+      <div class="underline-on-hover">
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <!-- EVENTUALLY MAKE THE PILLS DROP DOWNS THAT DESCRIBE THE SERVICE -->
+        <p>Services Offered</p>
+
+        <div class="services-list" aria-label="List of services">
+          <div class="service-pill">
+            <b>Plumbing inspection</b>
+
+            Free inspection!
+          </div>
+
+          <div class="service-pill">
+            <b>Toilet repair</b>
+
+            Replacement of any part
+          </div>
+
+          <div class="service-pill">
+            <div class="text-area">
+              <b>Installation</b>
+              Dishwashers, Sinks, Faucets, Toilets, etc;
+            </div>
+
+            <img class="service-img" 
+                src="{{ url_for('static', filename='images/service_installation.png') }}" 
+                alt="Service photo">
+          </div>
+
+          <div class="service-pill">
+            <div class="text-area">
+              <b>Plumbing repair</b>
+              Dishwashers, Sinks, Faucets, Toilets, etc;
+            </div>
+
+            <img class="service-img" 
+                src="{{ url_for('static', filename='images/service_repair.png') }}" 
+                alt="Service photo">
+          </div>
+    </section>
+
+    <div class="container">
+      <img class="central-img" style="
+        border-radius: 10px;
+        border-style:groove;
+        border-width: 5px;
+        border-color: black;"
+                src="{{ url_for('static', filename='images/rhassett_coverage.png') }}" 
+                alt="Coverage photo">
+      <p>
+        We cover as from San Francisco County down to San Mateo!
+      </p>
+    </div>
+    
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+
+      <div class="container">
+        <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco"><p>Testimonials</p></a>
+
+        <div class="yelp-review">
+          <div class="review">
+            <span class="yelp-review" data-review-id="lS2hQqywa9wB6RILw0Ve8Q" data-hostname="www.yelp.com">
+              Read <a href="https://www.yelp.com/user_details?userid=I1-3duj6sFCd7T-IkPVXVw" rel="nofollow noopener">Jeanne D.</a>'s
+              <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco?hrid=lS2hQqywa9wB6RILw0Ve8Q" rel="nofollow noopener">review</a>
+              of <a href="https://www.yelp.com/biz/czEzB9apPSS2SaSZCPMtAw" rel="nofollow noopener">R. Hassett Plumbing</a> on
+              <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+              <script src="https://www.yelp.com/embed/widgets.js" async></script>
+            </span>
+          </div>
+
+          <div class="review">
+            <span class="yelp-review" data-review-id="WcBXePtMe56U5LM8Bqc5eA" data-hostname="www.yelp.com">
+              Read <a href="https://www.yelp.com/user_details?userid=ZJr5Usebor0YzmhoMOOaCA" rel="nofollow noopener">Jenny M.</a>'s
+              <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco?hrid=WcBXePtMe56U5LM8Bqc5eA" rel="nofollow noopener">review</a>
+              of <a href="https://www.yelp.com/biz/czEzB9apPSS2SaSZCPMtAw" rel="nofollow noopener">R. Hassett Plumbing</a> on
+              <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+              <script src="https://www.yelp.com/embed/widgets.js" async></script>
+            </span>
+          </div>
+
+          <div class="review">
+            <span class="yelp-review" data-review-id="vOMIbuQB4qHxFWa-m-v6lw" data-hostname="www.yelp.com">
+              Read <a href="https://www.yelp.com/user_details?userid=5bJTaQZjj_tPYnaOHIDi6Q" rel="nofollow noopener">Madeleine R.</a>'s
+              <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco?hrid=vOMIbuQB4qHxFWa-m-v6lw" rel="nofollow noopener">review</a>
+              of <a href="https://www.yelp.com/biz/czEzB9apPSS2SaSZCPMtAw" rel="nofollow noopener">R. Hassett Plumbing</a> on
+              <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+              <script src="https://www.yelp.com/embed/widgets.js" async></script>
+            </span>
+          </div>
+
+          <div class="review">
+            <span class="yelp-review" data-review-id="98mx9mcNg1m9RZgDspPIag" data-hostname="www.yelp.com">
+              Read <a href="https://www.yelp.com/user_details?userid=a0GCAfLXn99K7IKbTpN8lA" rel="nofollow noopener">Sharon B.</a>'s
+              <a href="https://www.yelp.com/biz/r-hassett-plumbing-san-francisco?hrid=98mx9mcNg1m9RZgDspPIag" rel="nofollow noopener">review</a>
+              of <a href="https://www.yelp.com/biz/czEzB9apPSS2SaSZCPMtAw" rel="nofollow noopener">R. Hassett Plumbing</a> on
+              <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+              <script src="https://www.yelp.com/embed/widgets.js" async></script>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <p>About Us</p>
+        <div style="max-width: 800px; margin: 0 auto; text-align:left;">
+        <i><strong>Your Trusted Plumbing Expert with 20 Years of Experience</strong> </i><br><br>
+          R. Hassett Plumbing is a highly-skilled and licensed all-service plumbing contractor handling simple 
+          and complex residential service calls, water heater replacement, as well as renovation and new 
+          construction projects. We’re a small family business, and over our more than 20 loyal years serving San Francisco, 
+          we have earned a reputation for our honest and fair rates, our courteous service, and our 
+          commitment to serving all of our neighbors with integrity and respect.
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <p>Contact Us</p>
+
+        <div class="contact-actions">
+          <p>Send an Email</p>
+          <p>Call us!</p>
+        </div>
+
+        <!-- <script>
+          function sendEmail(){
+            window.location.href =
+              "mailto:ronanhassettplumbing@gmail.com?subject=Plumbing%20Related%20Issue&body=[Insert Your Issue/Comment]";
+          }
+        </script> -->
+
+        <h4>If you'd like to email about an issue, service, or other questions, please email us at <i>ronanhassettplumbing@gmail.com</i>.</h4>
+        <h4>Please send all urgent client messages via phone. Thank you!</h4>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Back to top -->
+  <div class="back-home-button">
+    <a href="#back-home" aria-label="Back to top">Back To Home</a>
+  </div>
+
+</body>
+</html>
