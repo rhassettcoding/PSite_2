@@ -41,5 +41,8 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+#TO ACTIVATE VENV
+# source {venv_dir}/bin/activate
 # MAKE SURE VENV IS ACTIVATED FIRST!
 #TO RUN -> python app.py

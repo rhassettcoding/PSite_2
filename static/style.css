@@ -178,36 +178,35 @@ button:focus-visible{ outline: 3px solid var(--ring); outline-offset: 2px; borde
 
 /* Services list */
 .services-list{
-  display:grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display:block;
   gap: 12px;
   max-width: 800px;
   margin: 0 auto;
 }
 .service-pill {
+  flex-direction: column;
   background: #ffffff;
   border: 1px solid rgba(0,0,0,.06);
-  border-radius: 999px;
+  border-radius: 10px;
   padding: 10px 14px;
   box-shadow: 0 2px 8px rgba(0,0,0,.05);
   display: flex;                 /* allows side-by-side layout */
   align-items: center;           /* vertically align */
-  justify-content: space-between;/* pushes text left, image right */
-  gap: 24px;                      /* space between text and image */
-
+  justify-content: space-evenly;/* pushes text left, image right */
+  gap: 10px;                      /* space between text and image */
   max-width: 100%;
 }
 
-.service-pill .text-area {
+/* .service-pill .text-area {
   display: flex;
   flex-direction: column;
   text-align: left;
-}
+} */
 
 .service-img {
   width: 100px;     /* adjust size as you need */
   height: auto;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 
