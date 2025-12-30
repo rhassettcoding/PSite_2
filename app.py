@@ -45,4 +45,5 @@ if __name__ == '__main__':
 #TO ACTIVATE VENV
 # source {venv_dir}/bin/activate
 # MAKE SURE VENV IS ACTIVATED FIRST!
-#TO RUN -> python app.py
+#TO RUN -> python3 app.py
+#activate venv -> source venv/bin/activate
