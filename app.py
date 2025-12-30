@@ -40,10 +40,8 @@ def home():
     return render_template('index.html', open = currentMessage)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host = '0.0.0.0',debug=True)
 
-#TO ACTIVATE VENV
-# source {venv_dir}/bin/activate
 # MAKE SURE VENV IS ACTIVATED FIRST!
 #TO RUN -> python3 app.py
 #activate venv -> source venv/bin/activate
