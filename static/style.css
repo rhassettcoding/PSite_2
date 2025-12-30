@@ -33,6 +33,7 @@ body{
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
+  
 }
 
 /* Utility */
@@ -202,12 +203,6 @@ button:focus-visible{ outline: 3px solid var(--ring); outline-offset: 2px; borde
   flex-direction: column;
   text-align: left;
 } */
-
-.service-img {
-  width: 100px;     /* adjust size as you need */
-  height: auto;
-  border-radius: 25px;
-}
 
 
 /* Testimonials grid */

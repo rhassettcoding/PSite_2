@@ -81,17 +81,12 @@
 
           <div class="service-pill">
             <b>Bathroom Remodel</b>
-
-            <!-- Fix/Replacement of any part -->
           </div>
 
           <div class="service-pill">
             <div class="text-area">
               <b>Kitchen Remodel</b>
             </div>
-            <!-- <img class="service-img" 
-                src="{{ url_for('static', filename='images/service_installation.png') }}" 
-                alt="Service photo"> -->
           </div>
 
           <div class="service-pill">
@@ -99,9 +94,6 @@
               <b>Gas Line Install</b>
             </div>
 
-            <!-- <img class="service-img" 
-                src="{{ url_for('static', filename='images/service_repair.png') }}" 
-                alt="Service photo"> -->
           </div>
 
           <div class="service-pill">
@@ -112,11 +104,12 @@
     </section>
 
     <div class="container">
-      <img class="central-img" style="
+      <img style="
         border-radius: 10px;
+        display: flex;                 /* allows side-by-side layout */
+        align-items: center;           /* vertically align */
         border-style:groove;
         border-width: 1px;
-
         margin:auto;
         border-color: black;"
                 src="{{ url_for('static', filename='images/rhassett_coverage.png') }}" 

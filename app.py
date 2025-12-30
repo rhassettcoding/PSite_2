@@ -24,7 +24,7 @@ currentMessage = None
 onHolliday = False
 if(not onHolliday):
     if ((currentHour<17 and currentHour>=9) and currentWeekday < 6):
-        currentMessage = "Open"
+        currentMessage = "We are open!"
     else:
         if(currentWeekday>=6):
             currentMessage = (f"We are closed until Monday at {OPENING_TIME}")
